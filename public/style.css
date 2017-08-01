@@ -1,0 +1,23 @@
+.container{ 
+    background-color: #b8c3d6;
+    color:white;
+    }
+#loginForms{
+    background-color: #84a3d8;
+}
+
+#left{
+background-color: #ead76e;
+}
+#right{
+    background-color:#edbf6a;
+}
+#listMessage{
+    background-color:#79ceb3;
+    height: 200px;
+    overflow-y: auto;
+    
+}
+#txtareaMes{
+    overflow-y: auto;
+}

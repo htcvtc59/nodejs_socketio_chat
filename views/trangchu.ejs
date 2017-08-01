@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <title>Demo Socket IO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="https://chat-free.herokuapp.com/socket.io/socket.io.js"></script>
+    <script src="action.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="loginForms" class="col-12">
+                <h3>Name</h3>
+                <input type="text" class="form-control" id="txtUserName" />
+                <input type="button" class="btn btn-success" value="Register" id="btnRegister" />
+            </div>
+            <div id="chatForms" class="col-12">
+                <div class="row">
+                    <div class="col-4" id="left">
+                        <div id="boxTitle">User Online</div>
+                        <div id="boxContent">
+
+
+                        </div>
+                    </div>
+                    <div class="col-8" id="right">
+                        <div>Say Hi <span id="currentUser"></span></div>
+                        <input type="button" id="btnLogout" class="btn btn-primary" value="Logout">
+
+                        <div id="listMessage">
+
+                        </div>
+                        <div id="notification"></div>
+                        <input type="text" id="txtMessage" class="form-control">
+                        <input type="button" class="btn btn-Info" id="btnSendMessage" value="Send">
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <input type="text" class="form-control" id="txtRooms" />
+            <input type="button" class="btn btn-success" value="Create Rooms" id="btnCreateRooms" />
+
+        </div>
+        <div class="row" style="margin-bottom:100px;">
+            <div id="listRooms" class="col-4" style="background-color:brown;"></div>
+            <div class="col-8" style="background-color:chocolate;">
+                <input type="text" class="form-control" id="roomnow" disabled/>
+                <textarea class="form-control" rows="3" id="txtareaMes"></textarea>
+                <div class="input-group input-group-md">
+                    <input type="text" class="form-control" id="txtMess" />
+                    <span class="input-group-btn"><button class="btn btn-success" id="btnChat">
+                        Chat
+                        </button></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
